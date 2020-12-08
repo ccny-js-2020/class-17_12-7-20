@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 // a set is writing to your firebase database
 // set will override the current value of the ref
 //setting the "foo" reference value in our firebase database as a string
-firebase.database().ref("foo").set("car")
+firebase.database().ref("foo").set("whatever")
 
 //removing/deleting the "foo" reference value in our firebase database
 // firebase.database().ref("foo").remove();
@@ -41,6 +41,8 @@ firebase.database().ref("foo").on("value", function(snapshot){
   console.log(snapshot.key)
   //logging the value of the "foo" reference from the database
   console.log(snapshot.val())
+
+  $("#foo").text(snapshot.val())
 });
 
 //getting the current value of the "object" ref

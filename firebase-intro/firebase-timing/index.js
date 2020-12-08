@@ -29,11 +29,11 @@ setTimeout(function(){
 	console.log(employees)
 }, 100);
 
-//at .4 seconds after the browser loads, log the employees variable
+//at .5 seconds after the browser loads, log the employees variable
 setTimeout(function(){
 	console.log(employees)
-}, 400);
+}, 500);
 
 /*
-	This is showing that the firebase database takes about 4/10 of a second to retrieve an item from the database
+	This is showing that the firebase database takes about 5/10 of a second to retrieve an item from the database
 */
